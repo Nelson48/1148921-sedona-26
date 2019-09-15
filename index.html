@@ -9,19 +9,19 @@
 	<header>
 		<nav>
 			<a>
-			<img src="img/sedona.svg" width="140" height="72" alt="Седона">
+			<img src="img/sedona.svg" class="sedona" width="140" height="72" center alt="Седона">
 			</a>
 			<ul>
-				<li><a href="">Информация</a></li>
-				<li><a href="">Фото и Видео</a></li>
-				<li><a href="">Карта штата</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и Видео</a></li>
+				<li><a href="#">Карта штата</a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>	
 	</header>
 	<main>
 		<div class="head_logo">
-			<img src="img/intro-welcome.svg" width="459" height="353" alt="Седона">
+			<img src="img/intro-welcome.svg" class="intro" width="459" height="353" alt="Седона">
 	    </div>		
 
 
@@ -78,13 +78,34 @@
 		<h2>Заинтересовались?</h2>
 		<p>Укажите препологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 	</section>
+ 
+    <h3 class="form">Поиск гостиницы в Седоне</h3>
+    <form action="#" method="post">
+	    <label for="date">Дата заезда</label>
+	   		<input type="date" name="date">
+	   <label for="date">Дата выезда</label>
+	   		<input type="date" name="date">
+
+        <div class="people">
+          	<label for="adults">Взрослые</label>
+          	<input type="number" min="1" max="50" step="1" id="aduls" name="aduls">
+        </div>
+        <div class="people">
+        	<label for="amount">Дети</label>
+		<input type="button" value="+" onClick="change('amount',0,10, 1);"/>
+		<input id="amount" type="text" value="0"/>
+		<input type="button" value="-" onClick="change('amount',0,10,-1);"/>
+        </div>
+	   		<input type="submit" value="Найти">
+
+	</form>   
+
+
 
 	</main>
 
 	<footer>
-		<p>
-			<a href="#">#VISITSEDONA</a>
-		</p>
+		<span><a href="#">#VISITSEDONA</a></span>
 		<div class="social">
 			<ul>
           		<li>
@@ -95,7 +116,8 @@
          		</li>
          		<li>	
           			<a href="https://youtube.com"><img src="img/youtube.png" width="46" height="48" alt="Мы в Ютубе"></a>
-          		</li>	
+          		</li>
+          	</ul>		
         </div>
         <p> 
         	Webside by 

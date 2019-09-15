@@ -1,0 +1,31 @@
+.sedona {
+	padding-left: 530px;
+}
+
+.intro {
+	padding-left: 370px;
+	padding-top: 61px;
+}
+
+a.details {
+	display: inline-block;
+	font-family: "PT Sans";
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 21px;
+	text-transform: uppercase;
+	background-color: #81b3d2
+}
+
+body {
+	background: url(img/background.png);
+}
+
+header {
+	color: black;
+	background-color: white;
+	height: 56px;
+
+}
+
