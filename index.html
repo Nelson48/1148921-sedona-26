@@ -3,6 +3,7 @@
 <head>
 	<title>SEDONA</title>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 			<a>
 			<img src="img/sedona.svg" class="sedona" width="140" height="72" center alt="Седона">
 			</a>
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и Видео</a></li>
 				<li><a href="#">Карта штата</a></li>
@@ -20,23 +21,24 @@
 		</nav>	
 	</header>
 	<main>
-		<div class="head_logo">
-			<img src="img/intro-welcome.svg" class="intro" width="459" height="353" alt="Седона">
+		<div class="head-logo">
+			<img class="intro-logo" src="img/intro-welcome.svg" class="intro" width="459" height="353" alt="Седона">
 	    </div>		
 
+	<img class="decoration" src="img/polygon.svg">
 
-		
-
-	<section>
-		<h3>Седона-небольной городок в Аризоне<br>Заслуживающий большего!</h3>
+	<section class="text-intro">
+		<h3 class="text-promo">Седона - небольной городок в Аризоне Заслуживающий большего!</h3>
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	</section>		
 
-	<section>
-		<h3>Настоящий городок</h3>
+	<section class="block-1">
+		<h3>Настоящий <br> городок</h3>
 		<p>-№1-</p>
 		<p>Седона- не аттракциона для туристов,<br>там течёт своя жизнь</p>
+		<img class="fone-1" src="img/block-1.png">
 	</section>
+	
 
 	<section>
     	<h3>Жильё</h3>
@@ -79,50 +81,60 @@
 		<p>Укажите препологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 	</section>
  
-    <h3 class="form">Поиск гостиницы в Седоне</h3>
-    <form action="#" method="post">
-	    <label for="date">Дата заезда</label>
-	   		<input type="date" name="date">
-	   <label for="date">Дата выезда</label>
-	   		<input type="date" name="date">
-
-        <div class="people">
-          	<label for="adults">Взрослые</label>
-          	<input type="number" min="1" max="50" step="1" id="aduls" name="aduls">
-        </div>
-        <div class="people">
-        	<label for="amount">Дети</label>
-		<input type="button" value="+" onClick="change('amount',0,10, 1);"/>
-		<input id="amount" type="text" value="0"/>
-		<input type="button" value="-" onClick="change('amount',0,10,-1);"/>
-        </div>
-	   		<input type="submit" value="Найти">
-
-	</form>   
-
-
-
+    <div class="cont">
+      <div class="cont__item">
+        <h3 class="title cont__title"><span class="text">Поиск гостиницы в Седоне</span></h3>
+      </div>
+      <div class="cont__item">
+        <form class="cont__form">
+          <div class="cont__form-item">
+            <label class="cont__form-label cont__form-label_date" for="date-in">Дата заезда</label>
+            <input class="cont__form-input" type="date" name="date" id="date-in">
+          </div>
+          <div class="cont__form-item">
+            <label class="cont__form-label cont__form-label_date" for="date-out">Дата выезда</label>
+            <input class="cont__form-input" type="date" name="date" id="date-out">
+          </div>
+          <div class="cont__form-item cont__form-tem_flex">
+            <div class="cont__form-row">
+              <label for="adults" class="cont__form-label">Взрослые</label>
+              <input class="cont__form-input" type="number" min="1" max="50" step="1" id="aduls" name="aduls">
+            </div>
+            <div class="cont__form-row">
+              <label for="amount" class="cont__form-label">Дети</label>
+              <input type="button" value="+" onClick="change('amount',0,10, 1);" />
+              <input id="amount" type="text" value="0" />
+              <input type="button" value="-" onClick="change('amount',0,10,-1);" />
+            </div>
+          </div>
+          <div class="cont__form-item">
+            <button class="cont__form-submit" type="submit" value="">Найти</button>
+          </div>
+        </form>
+      </div>
+    </div> 
 	</main>
-
+</body>	
 	<footer>
 		<span><a href="#">#VISITSEDONA</a></span>
-		<div class="social">
-			<ul>
-          		<li>
-          			<a href="https://twitter.com"><img src="img/twitter.png" width="46" height="48" alt="Мы в Твиттере"></a>
-          		</li>	
-         		<li>
-         			<a href="https://facebook.com"><img src="img/fb.png" width="46" height="48" alt="Мы в Фейсбуке"></a>
-         		</li>
-         		<li>	
-          			<a href="https://youtube.com"><img src="img/youtube.png" width="46" height="48" alt="Мы в Ютубе"></a>
-          		</li>
-          	</ul>		
-        </div>
-        <p> 
+			<div class="social">
+				<div class="twitter test_flex">
+          			<a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="Мы в Твиттере"></a>
+          		</div>
+          		<div class="facebook test_flex">
+         			<a href="https://facebook.com"><img src="img/fb.svg" width="12" height="22" class="f-logo" alt="Мы в Фейсбуке"></a>
+         		</div>	
+         		<div class="youtube test_flex">	
+          			<a href="https://youtube.com"><img src="img/youtube.svg" width="20" height="16" class="y-logo" alt="Мы в Ютубе"></a>
+          		</div>
+          	</div>				
+
         	Webside by 
+        	<div class="logo-a">
         	<a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип кадемии"></a>
-      	</p>	
+        	</div>
+
+      	
 		
 	</footer>
     </div>
