@@ -3,21 +3,75 @@ body {
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
-	background: url(img/background.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-
 }
 
 .wrapper-center {
 	max-width: 1200px;
 	margin: auto;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+/*	background: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;*/
+	
 }
 
 a {
 	text-decoration: none;
 }
-
+.head-logo {
+	background: url(img/background.png) center -78px / cover no-repeat;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	height: 508px;
+	position: relative;
+}
+.head-logo__item_block-white {
+	background: url(img/polygon.svg) center center / cover no-repeat;
+	width: 1201px;
+	height: 59px;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	margin: 0 auto;
+	right: 0;
+}
+.nav * {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;;
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__link {
+	width: 239px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000000;
+	font-weight: bold;
+	line-height: 26px;
+}
+.nav__link_logo {
+	width: 244px;
+	position: relative;
+	z-index: 1;
+}
+.nav__link_logo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin: 0 auto;
+}
 .site-navigation {
 	list-style: none;
 	color: #000000;
@@ -36,16 +90,19 @@ a {
 	font-size: 21px;
 	text-align: center;
 	padding-top: 61px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 26px;
 }
 
-.text-intro p {
+.text-intro .text-text {
 	text-align: center;
 	font-size: 14px;
 	color: #333333;
+	font-weight: 400;
+	line-height: 26px;
 }
 
-.intro-logo {
-	padding-left: 370px;
 
 	
 
@@ -56,7 +113,7 @@ a {
 .section-1 {
 	display: flex;
 	width: 1200px;
-	height: 400px;
+	height: 256px;
 }
 
 
@@ -88,10 +145,22 @@ a {
 
 .block-1 span {
 	font-size: 21px;
+	font-weight: 700;
+	text-align: center;
+}
+
+ .block-1 .number {
+	font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: 400;
 }
 
 .block-1 p {
+	line-height: 21px;
 	font-size: 14px;
+	font-weight: 400;
+
 }
 
 .block-2 .fone-1  {
@@ -101,20 +170,135 @@ a {
 
 
 .section-2  {
-	display: flex;
+/*	display: flex;
 	width: 1200px;
 	height: 330px;
 	background-color: white;
-	margin-top: -144px;
+	margin-top: -144px;*/
+}
+.elements {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.elements__item {
+	width: 400px;
+	height: 330px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 70px;
+	text-align: center;
+}
+.elements__icon {
+	width: 75px;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.elements__icon img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.elements__icon_food {
+	width: 74px;
+	height: 70px;
+}
+.elements__text {
+	font-size: 14px;
+
+}
+.elements__title {
+	font-size: 21px;
+	color: #000;
+	font-weight: bold;
+	margin: 30px 0;
+}
+.block-3 {
+	width: 400px
+	height: 330px;
+	box-sizing: border-box;
+}
+
+.house {
+/*	display: flex;
+	margin-top: 60px;
+	margin-left: auto;
+    margin-right: auto;*/
+}
+
+.block-3 span {
+	font-size: 21px;
+	margin-top: 29px;
+	position: relative;
+	margin-top: 32px;
+    margin-right: auto;
 
 }
 
-
-
+.block-3 p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #333333;
+	text-align: center;
 
 }
 
+.section-3 {
+	padding: 0px
+	margin: 0px;
+	display: flex;
+	width: 1200px;
+	height: 256px;
+	flex-direction: row-reverse;
+
 }
+
+.block-4 {
+	width: 400px;
+	height: 256px;
+	color: white;
+	box-sizing: border-box;
+	background-color: #81b3d2;
+	padding-top: 49px;
+	padding-left: 49px;
+	padding-right: 65px;
+	padding-bottom: 48px;
+}
+
+.block-4 span {
+	display:flex;
+	justify-content: center;
+	font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.block-4 .number {
+	font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: center;
+    border: 0px;
+}
+
+.block-4 p {
+	line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;   
+}
+
+.description {
+	width: 303px;
+	height:142px;
+}
+
 /*
 .navigation {
 	font-size: 14px;

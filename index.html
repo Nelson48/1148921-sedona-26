@@ -6,38 +6,54 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+<body>
 	<div class="wrapper-center">
 	<header>
-		<nav>
-			<a>
-			<img src="img/sedona.svg" class="sedona" width="140" height="72" center alt="Седона">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="catalog.html">Гостиницы</a></li>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="" class="nav__link">Информация</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__link">Фото и Видео</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__link nav__link_logo">
+						<img src="img/sedona.svg" class="sedona" width="140" height="72" center alt="Седона">
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__link">Карта штата</a>
+				</li>
+				<li class="nav__item">
+					<a href="catalog.html" class="nav__link">Гостиницы</a>
+				</li>
 			</ul>
 		</nav>	
 	</header>
 	<main>
 		<div class="head-logo">
-			<img class="intro-logo" src="img/intro-welcome.svg" class="intro" width="459" height="353" alt="Седона">
+			<div class="head-logo__item">
+				<img class="intro-logo" src="img/intro-welcome.svg" class="intro" width="459" height="353" alt="Седона">
+			</div>
+			<div class="head-logo__item head-logo__item_block-white">
+				<!-- <img src="img/polygon.svg" alt=""> -->
+			</div>
+			
 	    </div>		
 
-	<img class="decoration" src="img/polygon.svg">
+	<img class="decoration" src="img/polygon.svg" width="1201px" height="59px">
 
 	<section class="text-intro">
-		<h3 class="text-promo">Седона - небольной городок в Аризоне Заслуживающий большего!</h3>
-		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		<h3 class="text-promo">Седона — небольной городок в Аризоне,<br> Заслуживающий большего!</h3>
+		<p class="text-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	</section>
 
 	<div class="section-1">
 		<div class="block-1">
 			<span>Настоящий<br>городок</span>
-			<p>-№1-</p>
-			<p>Седона- не аттракцион для туристов,<br>там течёт своя жизнь</p>
+			<p class="number">— №1 —</p>	
+			<p>Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
 		</div>
 		<div class="block-2">	
 		<img class="fone-1" src="img/block-1.png">
@@ -46,26 +62,55 @@
 
 	
 
-	<div class="section-2">
-		<div class="block-3">
-			<img class="house" src="img/house.svg">
-    		<h3>Жильё</h3>
-    		<p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+	<div class="section-2 elements">
+		<div class="block-3 elements__item">
+			<div class="elements__icon">
+				<img class="house" src="img/house.svg">
+			</div>
+			<div class="elements__title">Жильё</div>
+    		<div class="elements__text">
+    			Рекомендуем пожить в настоящем мотеле, всё как в кино!
+    		</div>
+    	</div>
+    	<div class="block-3 elements__item">
+			<div class="elements__icon elements__icon_food">
+				<img class="house" src="img/icon-3.svg">
+			</div>
+			<div class="elements__title">ЕДА</div>
+    		<div class="elements__text">
+    			Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+    		</div>
+    	</div>
+    	<div class="block-3 elements__item">
+			<div class="elements__icon">
+				<img class="house" src="img/house.svg">
+			</div>
+			<div class="elements__title">Сувениры</div>
+    		<div class="elements__text">
+    			Не только китайского, но и местного производства!
+    		</div>
+    	</div>
+<!--     	<div class="block-4 elements__item">
         	<h3>ЕДА</h3>
     		<p>Всегда закащывайте фирменный бургер,<br> вы не разочаруетесь!</p>
     	</div>
 
-    	<div class="block-4">
+    	<div class="block-5 elements__item">
    			<h3>Сувениры</h3>
-    		<p>Не только китайского, но и местного производства!</p>
-		</div>
+    		<p></p>
+		</div> -->
 	</div>
 		
-		<div class="block-5">
-	   		<h3>Там есть мост дьявола</h3>
-			<p>-№2-</p>
-			<p>Да, по нему можно пройти! если конечно<br>вы осмелитесь</p>
-		</div>
+		<div class="section-3">
+			<div class="block-4">
+	   		<span>Там есть<br>мост дьявола</span>
+			<p class="number">— №2 —</p>
+			<p class="description">Да, по нему можно пройти! если конечно<br>вы осмелитесь</p>
+			</div>
+			<div class="block-5">
+			<img class="fone-2" src="img/block-2.png">
+			</div>
+		</div>		
 
 	<section>
 		<h3>Небольшая площадь</h3>
