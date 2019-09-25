@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 .wrapper-center {
@@ -393,9 +394,7 @@ a {
 	padding-top: 38px;
 }
 
-.map {
-	position: absolute;
-	z-index: 0;
+
 }
 
 .cont_form {
@@ -489,37 +488,46 @@ header {
       width: 100%;     
 }
 
-
 footer {
+	position: relative;
+}
+
+.main_footer {
 	position: absolute;
-	z-index: 1;
 	width: 1200px;
 	height: 120px;
 	background-color: white;
-	bottom: -1772px;
-
 	opacity: 0.9;
+	top: -120px;
+
 }
 
-.social {
+.footer_content {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	align-items: center;
-	
+	height: 120px;
 }
 
-.social-1 {
+.footer_item .social {
 	display: flex;
-	align-items: center;
 }
 
 .visit {
-	width: 136px;
-	height: 16px;
 	color: #000000;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
+	margin-left: 133px;
+	margin-top: 69px;
+}
+
+.footer_item_logo {
+	margin-right: 100px;
+}
+
+.footer_item_webside span {
+	margin-top: 40px;
 }
 
 .twitter {
