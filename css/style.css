@@ -41,6 +41,23 @@ button, a {
   color: #766357;
 }
 
+.nav-link:first-child {
+  margin-left: 70px;
+}
+
+.nav-link:nth-child(2) {
+  margin-left: 148px;
+}
+
+.nav-link:nth-child(3) {
+  margin-left: 387px;
+}
+
+.nav-link:last-child {
+  margin-left: 167px;
+}
+
+
 nav ul {
   display: flex;
 	margin: 0;
@@ -67,7 +84,6 @@ nav a:active {
 
 
 .nav-link {
-  width: 239px;
 	height: 56px;
 	display: flex;
 	align-items: center;
@@ -170,17 +186,28 @@ li {
     list-style: none;
 }
 
-.advantages-item {
-    width: 400px;
-    height: 256px;
-    background-color: #81b3d2;
+  .advantages-item {
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding: 30px 50px 65px 50px;
-    box-sizing: border-box;
-    color: white;
+  }
 
+.div-text {
+  min-width: 400px;
+  min-height: 256px;
+  background-color: #81b3d2;
+  color: white;
+  text-align: center;
+}
+
+.div-text h3 {
+  padding-top: 53px;
+  width: 151px;
+  margin: 0 auto;
+}
+
+.advantages-item .text-div {
+  min-width: 400px;
+  min-height: 256px;
+  background-color: #81b3d2;
 }
 
 .advantages-item h3 {
@@ -280,11 +307,10 @@ li {
     
 }
 
-.list-advantages-item-diablo {
-  display: flex;
+/* .list-advantages-item-diablo {
   flex-direction: row-reverse;
   max-height: 256px;
-}
+} */
 
 .advantage-item-column {
     display: flex;
