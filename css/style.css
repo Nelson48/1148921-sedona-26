@@ -25,6 +25,10 @@ button, a {
   cursor: pointer;
 }
 
+.text-name-hotel h3 {
+  cursor: pointer;
+}
+
 .wrapper-center {
 	max-width: 1200px;
     margin: auto;
@@ -965,6 +969,14 @@ li {
   margin-bottom: 12px;
 }
 
+.name-hotel:hover {
+  color: #81b3d2;
+}
+
+.name-hotel:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
 .hotels-group .price,
 .hotels-group .service {
   font-size: 14px;
@@ -1017,6 +1029,17 @@ li {
   margin-top: 7px;
   margin-left: 2px;
   background: #766357;
+}
+
+.bookup:hover {
+  background-color: #604e43;
+
+}
+
+.bookup:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.302);
+  
 }
 
 .star-info {
