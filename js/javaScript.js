@@ -1,0 +1,1 @@
+var linkforma=document.querySelector(".search-form-title"),form=document.querySelector(".search-form");linkforma.addEventListener("click",function(a){a.preventDefault(),form.classList.add("show-map")}),window.addEventListener("keydown",function(a){27===a.keyCode&&form.classList.contains("show-map")&&form.classList.remove("show-map")});

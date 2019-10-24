@@ -923,25 +923,52 @@ li {
   display: inline-block;
   vertical-align: middle;
   margin-left: 488px;
+  margin-top: -29px;
 }
 
-.sort-list .up-arrow {
+.sort-list .up-arrow  {
   margin-left: 0;
   width: 20px;
   height: 20px;
   vertical-align: middle;
   border: none;
-  background: url(../img/icon-up-dir.svg) no-repeat;
-}
+  } 
 
+
+.sort-list .up-arrow a {
+  border: 5px solid transparent;
+  border-bottom: 10px solid #cacaca;
+  }
+
+.sort-list .up-arrow a:hover {
+  border: 5px solid transparent;
+  border-bottom: 10px solid black;
+  }
+
+.sort-list .up-arrow a:active {
+  border: 5px solid transparent;
+  border-bottom: 10px solid #81b3d2;
+  }  
+  
 .sort-list .down-arrow {
   margin-left: 0;
   width: 20px;
   height: 20px;
   vertical-align: middle;
   border: none;
-  background: url(../img/icon-down-dir.svg) no-repeat;
+  margin-top: 51px;
 }
+
+.sort-list .down-arrow a {
+  border: 5px solid transparent;
+  border-top: 10px solid #81b3d2;
+}
+
+.sort-list .down-arrow a:hover {
+  border: 5px solid transparent;
+  border-top: 10px solid black;
+}
+
 
 .hotels-group {
   display: flex;
