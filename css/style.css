@@ -691,7 +691,7 @@ li {
 
 .container-form {
   width: 1200px;
-  height: 217px;
+  height: 208px;
   background: url(../img/background-cotalog.png) center -313px / cover no-repeat;
   padding-top: 10px;
     
@@ -699,6 +699,7 @@ li {
 
 .form-offers {
     padding: 0 71px 4px;
+    border: none;
 }
 
 .checkbox-offers {
@@ -752,11 +753,11 @@ li {
 }
 
 .filter-range {
-    width: 330px;
-    margin: 19px auto;
+    width: 314px;
+    margin: 16px auto;
     color: #ffffff;
     float: right;
-    text-align: center;
+
   }
 
   .filter-range-title {
@@ -887,12 +888,14 @@ li {
   display: flex;
   padding: 31px 73px;
   align-items: center;
+  height: 25px;
 }
 
 .filter-search .filter-end {
   width: 165px;
   margin: 0;
   text-align: left;
+  font-size: 21px;
 
 }
 
@@ -906,7 +909,7 @@ li {
   color: #000;
 }
 
-.sort-list a {
+.sort-list li {
   font-size: 12px;
   line-height: 18px;
   color: #b2b2b2;
@@ -918,6 +921,28 @@ li {
   color: #92bdd8;
   border-bottom: none
 }
+
+.by-type,
+.by-rating {
+  color: rgba(0, 0, 0, 0.302);
+
+}
+
+.sort-list .by-price:active {
+  color: #000;
+
+}
+
+.sort-list .by-type:hover {
+  color: #81b3d2;
+  
+}
+
+.by-rating:hover {
+  color: #81b3d2;
+
+}
+
 
 .sort-list-arrow {
   display: inline-block;
@@ -1040,12 +1065,10 @@ li {
 .btn-details {
   display: inline-block;
   padding: 12px 17px;
-  line-height: 21px;
   font-weight: 700;
   color: #fff;
   background: #81b3d2;
-  border-radius: 0;
-  border: none;
+  font-size: 14px;
 }
 
 .btn-details:hover {
@@ -1054,7 +1077,7 @@ li {
 
 .bookup {
   margin-top: 7px;
-  margin-left: 2px;
+  margin-left: 1px;
   background: #766357;
 }
 
