@@ -941,13 +941,21 @@ li {
 
 }
 
+.filter-list {
+  display: flex;
+  align-items: center;
+}
 
 .sort-list-arrow {
   display: flex;
-  margin-left: 488px;
-  margin-top: -29px;
+  margin-left: 510px;
+  margin-top: 14px;
 }
 
+.up-arrow,
+.down-arrow {
+  display: flex;
+}
 
 .up-arrow .sorting-up {
   border: 5px solid transparent;
@@ -957,54 +965,26 @@ li {
 
 .down-arrow .sorting-down {
   border: 5px solid transparent;
-  border-top: 10px solid #cacaca;
+  border-top: 10px solid #81b3d2;
+  transform: translateY(5px);
+  margin-left: 12px;
   
 }
 
-
-
-/* .up-arrow a  {
-  margin-left: 0;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  border: none;
-  }  */
-
-
-/* .sort-list-arrow .up-arrow a {
-  border: 5px solid transparent;
-  border-bottom: 10px solid #cacaca;
-  } */
-
-/* .up-arrow a:hover {
+.up-arrow a:hover {
   border: 5px solid transparent;
   border-bottom: 10px solid black;
-  } */
+  } 
 
-/* .up-arrow a:active {
+.up-arrow a:active {
   border: 5px solid transparent;
   border-bottom: 10px solid #81b3d2;
-  }   */
-  
-/* .down-arrow a {
-  margin-left: 0;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  border: none;
-  margin-top: 51px;
-} */
+  }  
 
-/* .down-arrow a {
-  border: 5px solid transparent;
-  border-top: 10px solid #81b3d2;
-} */
-
-/* .down-arrow a:hover {
+ .down-arrow a:hover {
   border: 5px solid transparent;
   border-top: 10px solid black;
-} */
+} 
 
 
 .hotels-group {
