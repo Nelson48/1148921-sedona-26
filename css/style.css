@@ -893,8 +893,6 @@ li {
 
 .filter-search .filter-end {
   width: 165px;
-  margin: 0;
-  text-align: left;
   font-size: 21px;
 
 }
@@ -945,54 +943,68 @@ li {
 
 
 .sort-list-arrow {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
   margin-left: 488px;
   margin-top: -29px;
 }
 
-.sort-list .up-arrow  {
+
+.up-arrow .sorting-up {
+  border: 5px solid transparent;
+  border-bottom: 10px solid #cacaca;
+}
+
+
+.down-arrow .sorting-down {
+  border: 5px solid transparent;
+  border-top: 10px solid #cacaca;
+  
+}
+
+
+
+/* .up-arrow a  {
   margin-left: 0;
   width: 20px;
   height: 20px;
   vertical-align: middle;
   border: none;
-  } 
+  }  */
 
 
-.sort-list .up-arrow a {
+/* .sort-list-arrow .up-arrow a {
   border: 5px solid transparent;
   border-bottom: 10px solid #cacaca;
-  }
+  } */
 
-.sort-list .up-arrow a:hover {
+/* .up-arrow a:hover {
   border: 5px solid transparent;
   border-bottom: 10px solid black;
-  }
+  } */
 
-.sort-list .up-arrow a:active {
+/* .up-arrow a:active {
   border: 5px solid transparent;
   border-bottom: 10px solid #81b3d2;
-  }  
+  }   */
   
-.sort-list .down-arrow {
+/* .down-arrow a {
   margin-left: 0;
   width: 20px;
   height: 20px;
   vertical-align: middle;
   border: none;
   margin-top: 51px;
-}
+} */
 
-.sort-list .down-arrow a {
+/* .down-arrow a {
   border: 5px solid transparent;
   border-top: 10px solid #81b3d2;
-}
+} */
 
-.sort-list .down-arrow a:hover {
+/* .down-arrow a:hover {
   border: 5px solid transparent;
   border-top: 10px solid black;
-}
+} */
 
 
 .hotels-group {
