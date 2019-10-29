@@ -364,14 +364,14 @@ li {
 }
 
 .main-search {
-    position: relative;
-    width: 1200px;
-    height: 290px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  width: 1200px;
+  min-height: 290px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .search-hotel {
@@ -419,8 +419,11 @@ li {
     padding: 56px 55px;
     min-height: 395px;
     box-sizing: border-box;
-    display: none;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  }
+
+  .vis-hidden {
+    display: none;
   }
   
   .search-form-title {
@@ -431,6 +434,7 @@ li {
     display: inline-block;
     font-weight: 700;
     color: #fff;
+    margin-top: 69px;
  
   }
   
@@ -1130,5 +1134,4 @@ li {
   top: -120px;
   border-top: 1px solid #e5e5e5;
 }
-
 
