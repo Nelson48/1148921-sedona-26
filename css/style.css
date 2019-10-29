@@ -401,17 +401,19 @@ li {
     top: 205px;
     margin-left: -284px;
     box-sizing: border-box;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     text-align: left;
     font-weight: 700;
     font-size: 0;
   }
   
+
   .search-form-content {
     background-color: #ffffff;
     padding: 56px 55px;
     min-height: 395px;
     box-sizing: border-box;
+    display: none;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   }
   
   .search-form-title {
@@ -905,6 +907,7 @@ li {
   font-size: 12px;
   line-height: 18px;
   color: #000;
+  padding-top: 3px;
 }
 
 .sort-list li {
