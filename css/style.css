@@ -365,6 +365,13 @@ li {
 
 .main-search {
     position: relative;
+    width: 1200px;
+    height: 290px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .search-hotel {
@@ -417,12 +424,14 @@ li {
   }
   
   .search-form-title {
+    padding: 30px 140px;
     font-size: 21px;
-    line-height: 86px;
-    color: #ffffff;
-    margin: 0 auto;
-    background-color: #766357;
-    text-align: center;
+    line-height: 26px;
+    background: #766357;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+ 
   }
   
 .search-form-title:hover {
