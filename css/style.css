@@ -374,6 +374,11 @@ li {
   text-align: center;
 }
 
+.main-search h2 {
+  padding-top: 23px;
+  font-size: 30px; 
+}
+
 .search-hotel {
     width: 1200px;
     height: 290px;
@@ -401,18 +406,44 @@ li {
 
 .search-form {
     width: 568px;
-    min-height: 480px;
+    height: 480px;
     position: absolute;
     z-index: 50;
     left: 50%;
-    top: 205px;
+    top: 290px;;
     margin-left: -284px;
     box-sizing: border-box;
     text-align: left;
     font-weight: 700;
-    font-size: 0;
+    /* animation: rt 4s 1; */
+/*    animation-duration: 4s;*/
+/*    animation-fill-mode: forwards;*/
+/*    transition: 4s;*/
+    /* opacity: 1; */
+
   }
   
+  @keyframes rt {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .anim-block {
+    animation-name: rt;
+    animation-duration: 1s;
+  }
+  
+
+  .people {
+    display: flex;
+    
+  }
+  
+
 
   .search-form-content {
     background-color: #ffffff;
@@ -427,14 +458,14 @@ li {
   }
   
   .search-form-title {
-    padding: 30px 140px;
+    padding: 30px 138px;
     font-size: 21px;
     line-height: 26px;
     background: #766357;
     display: inline-block;
     font-weight: 700;
     color: #fff;
-    margin-top: 69px;
+    margin-top: 30px;
  
   }
   
@@ -454,7 +485,7 @@ li {
   
   .search-form label {
     display: inline-block;
-    width: 112px;
+    width: 105px;
     font-size: 14px;
     line-height: 21px;
   }
@@ -523,7 +554,7 @@ li {
   }
   
   .children label {
-    width: 65px;
+    width: 60px;
   }
   
   .search-form button[type="submit"] {
