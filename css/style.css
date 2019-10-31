@@ -8,11 +8,6 @@ body {
     background: url(../img/polygon.svg);  
 }
 
-@font-face {
-    font-family: "Myriad Pro";
-    src: url(../fonts/MyriadPro.otf)
-}
-
 a {
     text-decoration: none;
 }
@@ -35,10 +30,6 @@ button, a {
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     background: url(../img/background.png) center -28px / cover no-repeat;
     background-size: 1200px 800px;
-}
-
-.info-active {
-  color: #766357;
 }
 
 .hotels-active {
@@ -155,7 +146,6 @@ nav a:active {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    font-family: "Myriad Pro";
 
 }
 
@@ -216,13 +206,11 @@ li {
 
 .advantages-item h3 {
     font-size: 21px;
-    font-family: "Myriad Pro";
     
 }
 
 .advantages-item p {
     font-size: 14px;
-    font-family: "Myriad Pro";
 }
 
 .advantages-list-icon {
@@ -245,14 +233,12 @@ li {
 
 .advantages-list-housing h3 {
     font-size: 21px;
-    font-family: "Myriad Pro";
 }
 
 .advantages-list-housing p {
     width: 299px;
     height: 81px;
     color: #333333;
-    font-family: "Myriad Pro";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -271,14 +257,12 @@ li {
 
 .advantages-list-food h3 {
     font-size: 21px;
-    font-family: "Myriad Pro";
  }
 
 .advantages-list-food p {
     width: 291px;
     height: 78px;
     color: #333333;
-    font-family: "Myriad Pro";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -296,7 +280,6 @@ li {
 
 .advantages-list-souvenirs h3 {
     font-size: 21px;
-    font-family: "Myriad Pro";
 
 }
 
@@ -304,7 +287,6 @@ li {
     width: 261px;
     height: 81px;
     color: #333333;
-    font-family: "Myriad Pro";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -392,13 +374,11 @@ li {
 .search-hotel h2 {
     font-size: 30px;
     line-height: 36px;
-    font-family: "Myriad Pro";
     padding-top: 59px;
 }
 
 .search-hotel p {
     color: #333333;
-    font-family: "Myriad Pro";
     font-size: 14px;
 }
 
@@ -410,7 +390,7 @@ li {
     position: absolute;
     z-index: 50;
     left: 50%;
-    top: 290px;;
+    top: 292px;;
     margin-left: -284px;
     box-sizing: border-box;
     text-align: left;
@@ -772,6 +752,8 @@ li {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    visibility: hidden;
+
 }
 
 .checkbox-offers .control-label {
