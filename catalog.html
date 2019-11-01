@@ -31,10 +31,10 @@
     </header>
 	<main class="main-catalog">
         <section class="container-form">
-			<fieldset class="form-offers" action="#" method="post">
-				<div class="checkbox-offers">
-					<h3 class="title-offers">Инфраструктура:</h3>
-					<ul class="list-offers">
+			<form class="form-offers" action="#" method="post">
+				<fieldset class="checkbox-offers">
+					<legend class="title-offers-info">Инфраструктура:</legend>
+					<ul class="list-offers-info">
 						<li>
                             <input class="form-checkbox" type="checkbox" name="infrastructure" id="ch1" value="бассейн" checked>
                             <span class="checkcheck"></span>
@@ -51,10 +51,10 @@
 							<label class="control-label" for="ch3">Wi-fi</label>
 						</li>
 					</ul>
-				</div>
-				<div class="checkbox-offers">
-					<h3 class="title-offers">Тип жилья:</h3>
-					<ul class="list-offers">
+				</fieldset>
+				<fieldset class="checkbox-offers">
+					<legend class="title-offers-info">Тип жилья:</legend>
+					<ul class="list-offers-info">
 						<li>
                             <input class="form-checkbox" type="checkbox" name="housing" id="ch4" value="гостиница" checked>
                             <span class="checkcheck"></span>
@@ -71,7 +71,7 @@
 							<label class="control-label" for="ch6">Апартаменты</label>
 						</li>
 					</ul>
-                </div>
+                </fieldset>
             <div class="filter-range">
                     <div class="filter-range-title">Стоимость в сутки (р):</div>
                     <div class="price-controls">
@@ -88,12 +88,12 @@
                         <button class="btn-transparent" type="submit">Показать</button>
                         </div>
        
-			</fieldset>            
+			</form>            
         </section>
         <section class="filter-search">
-            <h2 class="filter-end">
+            <b class="filter-end">
                 Найдено: 3
-            </h2>
+            </b>
             <div class="filter-list">
                 <span class="sort-item block-inline">
                     Сортировка:
