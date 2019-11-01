@@ -5,8 +5,7 @@ body {
 	text-transform: uppercase;
 	box-sizing: border-box;
   list-style: none;
-  background: url(../img/grey_back.png) center no-repeat;
-  background-size: 1282px 100%;
+  background-color: #f2f2f2;
 
 }
 
